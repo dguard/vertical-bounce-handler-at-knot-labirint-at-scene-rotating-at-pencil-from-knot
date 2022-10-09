@@ -1,0 +1,118 @@
+<html>
+<head>
+    <style>
+        .eye {
+            margin-left: -200px;
+        }
+        .statement-area {
+
+        }
+        .statement-at-front #scene {
+            width: 100vw;
+            height: 100vh;
+        }
+
+    </style>
+</head>
+<body class="eye">
+    <div class="statement-area">
+        <div class="statement-at-front">
+            <div class="isometric">
+                <div class="from-bottom-projection">
+                    <canvas id="scene"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- SIGNED USING RSA   -->
+
+    <!--    <script src="core-lib/js/viewported-knot-at-knot-labirint/draft-handle.js"></script>-->
+    <script src="core-lib/viewported-knot-at-knot-labirint-at-start/viewported-knot-at-knot-labirint/draft-compact-at-bounced.js"></script>
+    <script src="core-lib/viewported-knot-at-knot-labirint-at-start/viewported-knot-at-knot-labirint/draft-at-bounced.js"></script>
+    <script src="core-lib/viewported-knot-at-knot-labirint-at-start/viewported-knot-at-knot-labirint/handle-at-bounced.js"></script>
+
+
+    <!--    <script src="core-lib/js/viewported-knot-at-knot-labirint-from-bottom-statement/draft-handle-knot-from-cubic-project.js"></script>-->
+    <script src="core-lib/viewported-knot-at-knot-labirint-at-start/viewported-knot-at-knot-labirint-from-bottom-statement/draft-compact-knot-from-cubic-project.js"></script>
+    <script src="core-lib/viewported-knot-at-knot-labirint-at-start/viewported-knot-at-knot-labirint-from-bottom-statement/draft-knot-from-cubic-project.js"></script>
+    <script src="core-lib/viewported-knot-at-knot-labirint-at-start/viewported-knot-at-knot-labirint-from-bottom-statement/handle-knot-from-cubic-project.js"></script>
+
+    <!--    <script src="core-lib/js/knot-labirint/draft-handle-knot-labirint.js"></script>-->
+    <script src="core-lib/viewported-knot-at-knot-labirint-at-start/knot-labirint/draft-compact-knot-labirint.js"></script>
+    <script src="core-lib/viewported-knot-at-knot-labirint-at-start/knot-labirint/draft-knot-labirint.js"></script>
+    <script src="core-lib/viewported-knot-at-knot-labirint-at-start/knot-labirint/handle-knot-labirint.js"></script>
+
+    <!-- keep ! -->
+    <!--    <script src="core-lib/js/knot-labirint-from-rotated/draft-handle-knot-labirint-from-rotated.js"></script>-->
+    <script src="core-lib/viewported-knot-at-knot-labirint-at-start/knot-labirint-from-rotated/draft-compact-knot-labirint-from-rotated.js"></script>
+    <script src="core-lib/viewported-knot-at-knot-labirint-at-start/knot-labirint-from-rotated/draft-knot-labirint-from-rotated.js"></script>
+    <script src="core-lib/viewported-knot-at-knot-labirint-at-start/knot-labirint-from-rotated/handle-knot-labirint-from-rotated.js"></script>
+    <!-- keep ! -->
+
+<!--    <script src="core-lib/viewported-knot-at-knot-labirint-at-start/viewported-knot-at-knot-labirint/draft-compact.js"></script>-->
+    <script src="core-lib/viewported-knot-at-knot-labirint-at-start/viewported-knot-at-knot-labirint/viewported-knot-at-protected-scene.js"></script>
+    <script src="core-lib/viewported-knot-at-knot-labirint-at-start/viewported-knot-at-knot-labirint/viewported-knot-at-protected-viewport.js"></script>
+    <script src="core-lib/viewported-knot-at-knot-labirint-at-start/viewported-knot-at-knot-labirint/viewported-knot-at-pub.js"></script>
+<!-- END SIGNED USING RSA   -->
+
+<!-- DESIGNED USING KNOT -->
+
+    <!--    <script src="core-lib/js/viewported-knot-at-knot-labirint/draft-handle.js"></script>-->
+    <script src="core-lib/js/viewported-knot-at-knot-labirint-rotating/draft-compact-knot-rotating-at-bounced.js"></script>
+    <script src="core-lib/js/viewported-knot-at-knot-labirint-rotating/draft-knot-rotating-at-bounced.js"></script>
+    <script src="core-lib/js/viewported-knot-at-knot-labirint-rotating/handle-knot-rotating-at-bounced.js"></script>
+
+
+    <script src="core-lib/js/viewported-knot-at-knot-labirint-rotating/draft-compact.js"></script>
+    <script src="core-lib/js/viewported-knot-at-knot-labirint-rotating/viewported-knot-rotating-at-protected-scene.js"></script>
+    <script src="core-lib/js/viewported-knot-at-knot-labirint-rotating/viewported-knot-rotating-at-protected-viewport.js"></script>
+    <script src="core-lib/js/viewported-knot-at-knot-labirint-rotating/viewported-knot-rotating-at-pub.js"></script>
+
+    <script>
+        // use #vertical-bounce-handler-at-knot-labirint-from-rotated
+        // keep
+        let pencil = new Pencil()
+        let sceneWalkingAroundLabirintRotating = new SceneWalkingAroundLabirint()
+
+        let draftFabrikk = new DraftFabrikk()
+
+        let bottomStatement = draftFabrikk.constructBottomStatement()
+
+        // is it same scene?
+        pencil.rememberScene(sceneWalkingAroundLabirintRotating, new SceneWalkingAroundLabirintAtStart())
+        pencil.useScene(sceneWalkingAroundLabirintRotating)
+
+        let knotLabirintFromSceneWalkingAroundLabirintAtStart = pencil.constructKnot()
+
+        draftFabrikk.connectKnotToBottomStatement(bottomStatement, knotLabirintFromSceneWalkingAroundLabirintAtStart)
+
+        // keep
+        pencil.provideScene().putKnotConnectedToBottomStatement(knotLabirintFromSceneWalkingAroundLabirintAtStart)
+
+        // keep KnotLabirint
+
+        // keep KnotLabirintRotatingAtStart
+
+        // chalk KnotLabirintRotatingAtStart
+
+        // keep KnotLabirintRotatingAtAnotherPointerBelongings
+
+
+        // keep KnotLabirint
+
+        // keep KnotLabirintRotatingAtStart
+        // keep KnotLabirintRotatingAtAnotherPointerBelongings
+
+        // chalk KnotLabirintRotatingAtAnotherPointerBelongings
+
+        // keep KnotLabirintRotatingAtRemainingPointerBelongings
+
+        pencil.draw()
+
+        // keep !
+    </script>
+
+</body>
+
+</html>
